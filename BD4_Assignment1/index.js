@@ -4,6 +4,7 @@ const cors = require('cors');
 const sqlite3 = require('sqlite3');
 const { open } = require('sqlite');
 const app = express();
+app.use(cors());
 const port = 3010;
 
 let db;
